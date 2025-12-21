@@ -98,6 +98,15 @@ CREATE TABLE IF NOT EXISTS stats (date TEXT PRIMARY KEY, count INTEGER DEFAULT 0
 CREATE TABLE IF NOT EXISTS flood (ip TEXT PRIMARY KEY, count INTEGER DEFAULT 0, updated_at INTEGER);
 ```
 
+3.  **绑定变量**：
+    *   回到你的 Worker 项目设置。
+    *   点击 **设置** -> **变量** -> **D1 数据库绑定**。
+    *   变量名称：**`DB`** (必须大写，不能改名)。
+    *   选择刚才创建的数据库。
+    *   **保存并部署**。
+
+---      
+
 ## 📂 代码版本说明
 
 本项目包含两套代码，请根据您的部署方式选择：
